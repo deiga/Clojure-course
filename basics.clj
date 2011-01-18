@@ -159,3 +159,13 @@
 
 (first-elems [[1 2 3] [4 5 6]])
 
+; Problem 16
+(defn sort-by-keys [map]
+  (let [keys (keys map)
+        sorted (sort keys)]
+    (for [key sorted]
+      (get map key))))
+
+(keys  { "b" 1 "c" 2 "a" 3 })
+(sort (keys  { "b" 1 "c" 2 "a" 3 }))
+(sort-by-keys { "b" 1 "c" 2 "a" 3 })
