@@ -82,3 +82,40 @@
   ;=> "false"
 (foo false)
   ;=> "false"
+
+; Problem 8
+(defn teen? [age]
+  (if (<= 13 age 19)
+    true
+    false))
+
+(teen? 12)
+(teen? 15)
+(teen? 13)
+(teen? 19)
+(teen? 27)
+
+; Problem 9
+(defn not-teen? [age]
+  (not (teen? age)))
+
+(not-teen? 13)
+(not-teen? 25)
+(not-teen? 12)
+
+; Problem 10
+(defn spiff [vector]
+  (+ (nth vector 0) (nth vector 2)))
+
+(spiff  [1 2 3])
+(spiff  [1 2])
+  ;=> nil
+(spiff  '(1 2 3))
+  ;=> 4
+
+; Problem 11
+(defn cutefy [collection]
+  (conj collection "<3"))
+
+(cutefy  [1 2 3])
+(cutefy '(1 2 3))
