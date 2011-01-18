@@ -182,8 +182,7 @@
 
 ; Problem 18
 (defn books-by-author2 [author list-of-books]
-  (for [book (filter (fn [x] (= (x :author) author)) list-of-books)]
-    (book :title)))
+  (map #(:title %) (filter (fn [x] (= (x :author) author)) list-of-books)))
 
 
 (books-by-author2 "China Miéville" books)
@@ -194,5 +193,16 @@
 
 (maps-and-filters [[1 2 3] [4 5 6 7] [8 9]])
 
+; Problem 20
+(defn str-to-seq [string]
+  (map #(Integer. (str %))
+          (filter #(Character/isDigit %) string)))
 
+(str-to-seq "1,2,3,4,5")
 
+; Problem 21
+(defn consecutives [seq]
+  (map (fn [x y] (vector x y)) seq (next seq)))
+
+(map + [1 2 3] [4 5 6])
+(consecutives [1 2 3 4])
