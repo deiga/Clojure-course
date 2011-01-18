@@ -119,3 +119,17 @@
 
 (cutefy  [1 2 3])
 (cutefy '(1 2 3))
+
+; Problem 12
+(defn spiff2 [collection]
+  (let [fst (nth collection 0)
+        snd (nth collection 2)]
+      (+ fst snd)))
+
+(spiff2 [1 2 3])
+(spiff2 [1 2])
+  ;=> nil
+(spiff2 '(1 2 3))
+  ;=> 4
+
+; Problem 13
