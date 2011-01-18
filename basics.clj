@@ -172,6 +172,9 @@
 
 ; Problem 17
 (defn books-by-author [author list-of-books]
+  (for [book list-of-books]
+    (when (= (book :author) author)
+      (book :title))))
 
 
 (def books [{:author "China Miéville" :title "Kraken"}
