@@ -133,3 +133,10 @@
   ;=> 4
 
 ; Problem 13
+(def cities {:author "China Miéville" :title "The City and the City"})
+(defn title-length [book]
+  (let [title (book :title)
+        title-length (count title)]
+    title-length))
+
+(title-length cities)
