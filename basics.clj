@@ -140,3 +140,14 @@
     title-length))
 
 (title-length cities)
+
+; Problem 14
+(def books {{:author "China Miéville" :title "The City and the City"} 500
+            {:author "Haruki Murakami" :title "Norwegian Wood"} 400
+            {:author "Guy Gavriel Kay" :title "Under Heaven"} 576})
+
+(defn add-number-of-pages [book-map book]
+  (let [nr-of-pages (book-map book)]
+    (assoc book :number-of-pages nr-of-pages)))
+
+(add-number-of-pages books cities)
