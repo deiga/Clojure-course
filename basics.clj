@@ -169,3 +169,30 @@
 (keys  { "b" 1 "c" 2 "a" 3 })
 (sort (keys  { "b" 1 "c" 2 "a" 3 }))
 (sort-by-keys { "b" 1 "c" 2 "a" 3 })
+
+; Problem 17
+(defn books-by-author [author list-of-books]
+
+
+(def books [{:author "China Miéville" :title "Kraken"}
+            {:author "China Miéville" :title "The City and the City"}
+            {:author "Haruki Murakami" :title "Norwegian Wood"}
+            {:author "Guy Gavriel Kay" :title "Under Heaven"}])
+(books-by-author "China Miéville" books)
+
+; Problem 18
+(defn books-by-author2 [author list-of-books]
+  (for [book (filter (fn [x] (= (x :author) author)) list-of-books)]
+    (book :title)))
+
+
+(books-by-author2 "China Miéville" books)
+
+; Problem 19
+(defn maps-and-filters [seqs]
+  (map #(nth % 1) seqs))
+
+(maps-and-filters [[1 2 3] [4 5 6 7] [8 9]])
+
+
+
