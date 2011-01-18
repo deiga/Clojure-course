@@ -151,3 +151,11 @@
     (assoc book :number-of-pages nr-of-pages)))
 
 (add-number-of-pages books cities)
+
+; Problem 15
+(defn first-elems [vects]
+  (for [vect vects]
+    (nth vect 0)))
+
+(first-elems [[1 2 3] [4 5 6]])
+
