@@ -187,9 +187,9 @@
 
 ; Problem 17
 (defn books-by-author [author list-of-books]
-  (for [book list-of-books]
-    (when (= (book :author) author)
-      (book :title))))
+  (for [book list-of-books
+        :when (= (book :author) author)]
+    (book :title)))
 
 
 (def books [{:author "China Miéville" :title "Kraken"}
@@ -201,7 +201,6 @@
 ; Problem 18
 (defn books-by-author2 [author list-of-books]
   (map #(:title %) (filter (fn [x] (= (x :author) author)) list-of-books)))
-
 
 (books-by-author2 "China Miéville" books)
 
