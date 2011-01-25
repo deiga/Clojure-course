@@ -70,7 +70,13 @@
 
 ; Problem 6
 (defn fizzbuzz [nr]
-  (cond (== (mod nr 15) 0) (print "gotcha") (== (mod nr 5) 0) (print "buzz") (== (mod nr 3) 0) (print "fizz")))
+  (cond
+    (== (mod nr 15) 0)
+      (print "gotcha")
+    (== (mod nr 5) 0)
+      (print "buzz")
+    (== (mod nr 3) 0)
+      (print "fizz")))
 
 (fizzbuzz 45)
   ; "gotcha"nil
@@ -100,9 +106,7 @@
 
 ; Problem 8
 (defn teen? [age]
-  (if (<= 13 age 19)
-    true
-    false))
+  (<= 13 age 19))
 
 (teen? 12)
 (teen? 15)
@@ -200,7 +204,7 @@
 
 ; Problem 18
 (defn books-by-author2 [author list-of-books]
-  (map #(:title %) (filter (fn [x] (= (x :author) author)) list-of-books)))
+  (map :title (filter (fn [x] (= (x :author) author)) list-of-books)))
 
 (books-by-author2 "China Miéville" books)
 
@@ -219,7 +223,7 @@
 
 ; Problem 21
 (defn consecutives [seq]
-  (map (fn [x y] (vector x y)) seq (next seq)))
+  (map vector seq (next seq)))
 
 (map + [1 2 3] [4 5 6])
 (consecutives [1 2 3 4])

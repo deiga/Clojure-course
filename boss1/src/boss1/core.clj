@@ -10,13 +10,13 @@
   (filter #(author-has-years? %) books))
 
 (defn authors [books]
-  (distinct (map #(:author %) books)))
+  (distinct (map :author books)))
 
 (defn author-names [books]
   (distinct (map #(:name (:author %)) books)))
 
 (defn titles-by-author [author books]
-  (map #(:title %) (filter #(= author (:author %)) books)))
+  (map :title (filter #(= author (:author %)) books)))
 
 (defn author-catalog [books]
   (reduce conj {} (map #(conj [] % (titles-by-author % books)) (authors books))))

@@ -95,3 +95,1626 @@ Unable to locate resource in repository
 Downloading: unifycle/unifycle/0.5.0/unifycle-0.5.0.jar from repository clojars at http://clojars.org/repo
 Transferring 4K from sonatype-nexus-snapshots
 Transferring 3K from clojars
+
+FAIL at (test_core.clj:35)
+    Expected: false
+      Actual: nil
+
+FAIL at (test_core.clj:38)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:39)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just book-with-years)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:40)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:43)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:44)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:48)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:38)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:39)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just book-with-years)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:40)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:43)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:44)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:48)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:38)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:39)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just book-with-years)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:40)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:43)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:44)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:48)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:43)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:44)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:45)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just hoffman)
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:48)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=35582]>, :connections #<Ref@921a90: #{}>}
+
+FAIL at (test_core.clj:48)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:48)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:49)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected fifteen elements. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:50)
+Actual result did not agree with the checking function.
+        Actual result: ("Hoffmann, Franz" "Hoffmann, Franz")
+    Checking function: (just "Hoffmann, Franz")
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:53)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Expected fifty elements. There were two.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassCastException: clojure.lang.PersistentArrayMap cannot be cast to java.lang.Number
+              boss1.test_core$eval4719.invoke(test_core.clj:52)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<RuntimeException java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassCastException: clojure.lang.PersistentArrayMap cannot be cast to java.lang.Number>} is a map, "Nuoren Robertin matka Grönlantiin isäänsä hakemaan" should look like map entries.
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassCastException: clojure.lang.PersistentArrayMap cannot be cast to java.lang.Number
+              boss1.test_core$eval4719.invoke(test_core.clj:52)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor36.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor11.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       If {"this Throwable was captured by midje:" #<RuntimeException java.lang.RuntimeException: java.lang.RuntimeException: java.lang.ClassCastException: clojure.lang.PersistentArrayMap cannot be cast to java.lang.Number>} is a map, ["Ihmiskohtaloja" "Elämän meri"] should look like map entries.
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:54)
+Actual result did not agree with the checking function.
+        Actual result: ({:title "Nuoren Robertin matka Grönlantiin isäänsä hakemaan", :author {:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882}})
+    Checking function: (just "Nuoren Robertin matka Grönlantiin isäänsä hakemaan")
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:56)
+Actual result did not agree with the checking function.
+        Actual result: ({:title "Ihmiskohtaloja", :author {:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932}} {:title "Elämän meri", :author {:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932}})
+    Checking function: (just (:title book-2) (:title book-3))
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ":("
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([[{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")]])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([[{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")]] [[{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")]] [[{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")]])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ({{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")})
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ({{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")} {{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")} {{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")})
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ({{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")})
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ({{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")} {{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")} {{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")})
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=38954]>, :connections #<Ref@1dee0d7: #{}>}
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=27425]>, :connections #<Ref@73b879: #{}>}
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=64802]>, :connections #<Ref@140c3b9: #{}>}
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval3975.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval3975.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor32.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=48837]>, :connections #<Ref@171ed5e: #{}>}
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=39242]>, :connections #<Ref@154145: #{}>}
+{:server-socket #<ServerSocket ServerSocket[addr=localhost/0:0:0:0:0:0:0:1,port=0,localport=62279]>, :connections #<Ref@de648: #{}>}
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval3929.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval3929.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4033.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              cake.tasks.compile$compile_clojure.invoke(compile.clj:36)
+              cake.tasks.compile$task_compile.invoke(compile.clj:48)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4033.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              cake.tasks.compile$compile_clojure.invoke(compile.clj:36)
+              cake.tasks.compile$task_compile.invoke(compile.clj:48)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4153.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              cake.tasks.compile$compile_clojure.invoke(compile.clj:36)
+              cake.tasks.compile$task_compile.invoke(compile.clj:49)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4153.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              cake.tasks.compile$compile_clojure.invoke(compile.clj:36)
+              cake.tasks.compile$task_compile.invoke(compile.clj:49)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4273.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              cake.tasks.eval$task_run.invoke(eval.clj:36)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4273.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              cake.tasks.eval$task_run.invoke(eval.clj:36)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4631.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.test_core$eval4631.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ({":{:name \"Hoffmann, Franz\", :birth-year 1814, :death-year 1882}" ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")})
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ({":{:name \"Hoffmann, Franz\", :birth-year 1814, :death-year 1882}" ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")} {":{:name \"Järnefelt, Arvid\", :birth-year 1861, :death-year 1932}" ("Ihmiskohtaloja" "Elämän meri")} {":{:name \"Järnefelt, Arvid\", :birth-year 1861, :death-year 1932}" ("Ihmiskohtaloja" "Elämän meri")})
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ({{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")})
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ({{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")} {{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")} {{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")})
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.IllegalArgumentException: Wrong number of args (0) passed to: core$conj
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval6478$fn__6479.invoke(test_core.clj:61)
+              boss1.test_core$eval6478.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.IllegalArgumentException: Wrong number of args (0) passed to: PersistentVector
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval6478$fn__6481.invoke(test_core.clj:62)
+              boss1.test_core$eval6478.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.IllegalArgumentException: Wrong number of args (0) passed to: PersistentVector
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval6478$fn__6483.invoke(test_core.clj:63)
+              boss1.test_core$eval6478.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.IllegalArgumentException: Wrong number of args (0) passed to: PersistentVector
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval6974$fn__6977.invoke(test_core.clj:62)
+              boss1.test_core$eval6974.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.RuntimeException: java.lang.IllegalArgumentException: Wrong number of args (0) passed to: PersistentVector
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval6974$fn__6979.invoke(test_core.clj:63)
+              boss1.test_core$eval6974.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.tasks.deps$task_deps.invoke(deps.clj:125)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:131)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval7470$fn__7473.invoke(test_core.clj:62)
+              boss1.test_core$eval7470.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.IllegalArgumentException: Vector arg to map conj must be a pair
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval7470$fn__7475.invoke(test_core.clj:63)
+              boss1.test_core$eval7470.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([[{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")]])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([[{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")]] [[{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")]] [[{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")]])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.util.Map$Entry
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval7954$fn__7957.invoke(test_core.clj:62)
+              boss1.test_core$eval7954.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.util.Map$Entry
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval7954$fn__7959.invoke(test_core.clj:63)
+              boss1.test_core$eval7954.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([":{:name \"Hoffmann, Franz\", :birth-year 1814, :death-year 1882}" ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([":{:name \"Hoffmann, Franz\", :birth-year 1814, :death-year 1882}" ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [":{:name \"Järnefelt, Arvid\", :birth-year 1861, :death-year 1932}" ("Ihmiskohtaloja" "Elämän meri")] [":{:name \"Järnefelt, Arvid\", :birth-year 1861, :death-year 1932}" ("Ihmiskohtaloja" "Elämän meri")])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: (nil)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: (nil nil nil)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: [()]
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: [([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])]
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: [([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])]
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: (("Nuoren Robertin matka Grönlantiin isäänsä hakemaan"))
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: (("Nuoren Robertin matka Grönlantiin isäänsä hakemaan") ("Ihmiskohtaloja" "Elämän meri") ("Ihmiskohtaloja" "Elämän meri"))
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.util.Map$Entry
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval10344$fn__10347.invoke(test_core.clj:62)
+              boss1.test_core$eval10344.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: {}.
+             It matched: {}.
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: java.lang.ClassCastException: clojure.lang.PersistentVector cannot be cast to java.util.Map$Entry
+              boss1.core$author_catalog.invoke(core.clj:22)
+              boss1.test_core$eval10344$fn__10349.invoke(test_core.clj:63)
+              boss1.test_core$eval10344.invoke(test_core.clj:60)
+              bake.reload$reload_namespaces.doInvoke(reload.clj:24)
+              bake.reload$reload.invoke(reload.clj:70)
+              sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              sun.reflect.GeneratedMethodAccessor15.invoke(Unknown Source)
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+              classlojure$invoke_in_STAR_.doInvoke(classlojure.clj:37)
+              classlojure$eval_in$fn__56.invoke(classlojure.clj:57)
+              classlojure$eval_in.doInvoke(classlojure.clj:52)
+              cake.project$reload$fn__468.invoke(project.clj:47)
+              cake.project$reload.invoke(project.clj:44)
+              cake.project$project_eval.invoke(project.clj:85)
+              tasks$task_midje.invoke(tasks.clj:11)
+              cake.task$run_task.invoke(task.clj:136)
+              cake.task$run_task.invoke(task.clj:122)
+              cake.main$process_command.invoke(main.clj:25)
+              cake.server$create$fn__1006.invoke(server.clj:84)
+              cake.utils.server_socket$accept_fn$fn__738$fn__741.invoke(server_socket.clj:39)
+              cake.utils.server_socket$accept_fn$fn__738.invoke(server_socket.clj:38)
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected two elements. There was one.
+
+FAIL at (test_core.clj:61)
+Actual result did not agree with the checking function.
+        Actual result: [()]
+    Checking function: empty?
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: [([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])]
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: [([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])]
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: (("Nuoren Robertin matka Grönlantiin isäänsä hakemaan"))
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: (("Nuoren Robertin matka Grönlantiin isäänsä hakemaan") ("Ihmiskohtaloja" "Elämän meri") ("Ihmiskohtaloja" "Elämän meri"))
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were three.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ({:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882})
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ({:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} {:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932})
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
+
+FAIL at (test_core.clj:62)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")])
+    Checking function: (just {hoffman (just (:title book-1))})
+    The checker said this about the reason:
+       Best match found: []
+
+FAIL at (test_core.clj:63)
+Actual result did not agree with the checking function.
+        Actual result: ([{:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882} ("Nuoren Robertin matka Grönlantiin isäänsä hakemaan")] [{:name "Järnefelt, Arvid", :birth-year 1861, :death-year 1932} ("Ihmiskohtaloja" "Elämän meri")])
+    Checking function: (just {hoffman (just (:title book-1)), jarnefelt (just (:title book-2) (:title book-3))})
+    The checker said this about the reason:
+       Expected one element. There were two.
