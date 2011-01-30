@@ -61,3 +61,15 @@
 (first-value-for-key :a [{:b 1 :c 2} {:a 1 :b 2} {:a 2}])  => 1
 (first-value-for-key :a [{:b 1 :c 2} {:c 3}])              => nil
 
+; Problem P6
+(defn prime? [num]
+  (let [p (fn [x] (== (mod num x) 0))]
+      (not (some p (range 2 num)))))
+
+
+(prime? 4) => false  ;; or nil
+(prime? 17) => true  ;; some other true-ish value is okay too
+(prime? 2)
+(prime? 3)
+(prime? 5)
+(prime? 11)
