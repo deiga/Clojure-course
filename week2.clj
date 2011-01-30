@@ -53,3 +53,11 @@
 (defn every-book-has-a-title? [books-coll]
   (every? :title books-coll))
 (every-book-has-a-title? books) => true
+
+; Problem P5
+(defn first-value-for-key [key maps]
+  (some key maps))
+
+(first-value-for-key :a [{:b 1 :c 2} {:a 1 :b 2} {:a 2}])  => 1
+(first-value-for-key :a [{:b 1 :c 2} {:c 3}])              => nil
+
