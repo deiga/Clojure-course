@@ -2,6 +2,7 @@
 
 (def books (load-file "books.clj"))
 
+
 (defn author-has-years? [book]
   (let [author (book :author)]
     (or (contains? author :birth-year) (contains? author :death-year))))

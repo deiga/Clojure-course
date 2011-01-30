@@ -1,6 +1,6 @@
 ; ------ Predicates
 
-; Problem 1
+; Problem P1
 (defn generic-doublificate [arg]
   (condp instance? arg
     clojure.lang.PersistentVector (if (empty? arg) nil (map #(* 2 %) arg))
@@ -9,7 +9,6 @@
     Number  (* 2 arg)
     true))
 
-
 (generic-doublificate 1)        => 2
 (generic-doublificate [1 2])    => (2 4)
 (generic-doublificate '(65 21)) => (130 42)
@@ -17,7 +16,7 @@
 (generic-doublificate [])       => nil
 (generic-doublificate {:a 1})   => true
 
-; Problem 2
+; Problem P2
 (defn empty-string? [string]
   (every? whitespace? string))
 
@@ -28,7 +27,7 @@
 (empty-string? "  \t a")   => false
 (empty-string? "")         => true
 
-; Problem 3
+; Problem P3
 (defn pred-and [fst snd]
   (fn [x] (and (fst x) (snd x))))
 
@@ -42,3 +41,15 @@
     => "China Miéville" ; The value returned by :author
 (has-title-and-author? {:title "Author unknown"})
     => nil ; Since :author returns nil
+
+; Problem P4
+(def books [{:author "China Miéville" :title "Kraken"}
+            {:author "China Miéville" :title "The City and the City"}
+            {:author "Haruki Murakami" :title "Norwegian Wood"}
+            {:author "Guy Gavriel Kay" :title "Under Heaven"}])
+
+(def books2 (load-file "books.clj"))
+
+(defn every-book-has-a-title? [books-coll]
+  (every? :title books-coll))
+(every-book-has-a-title? books) => true
