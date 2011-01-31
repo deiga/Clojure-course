@@ -10,7 +10,8 @@
 
 ; Problem C2
 (defn halve [input]
-  )
+  (let [half (/ (count input) 2)]
+  (conj [] (take half input) (drop half input))))
 
 (halve [1 2 3 4])   => [(1 2) (3 4)]
 (halve [1 2 3 4 5]) => [(1 2 3) (4 5)]
