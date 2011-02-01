@@ -31,3 +31,21 @@
 (snip [1 4 2 :snip 8 2 9]) => [(1 4 2) (8 2 9)]
 
 ; Problem C5
+(defn describe-books [book-map]
+  (let [number (count book-map)
+        fst-str (str "I have " number " books.")]
+    (for (book book-map)
+      )))
+
+(describe-books [{:title "Fooled by Randomness" :author "Nassim Taleb"} {:title "In Cold Blood" :author "Truman Capote"}]
+=>
+"I have 2 books. Fooled by Randomness was written by Nassim Taleb. In Cold Blood was written by Truman Capote."
+
+; Problem C6
+(defn monotonic? [sequence])
+
+(monotonic? [1 2 3])    => true
+(monotonic? [0 1 10 11]) => true
+(monotonic? [3 2 0 -3]) => true
+(monotonic? [3 2 2])    => true  ; Not strictly monotonic
+(monotonic? [1 2 1 0])  => false
