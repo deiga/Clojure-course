@@ -113,3 +113,12 @@
 (book-to-string {:title "Nuoren Robertin matka Grönlantiin isäänsä hakemaan"
                  :author {:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882}})
     => "A book, Nuoren Robertin matka Grönlantiin isäänsä hakemaan, written by Hoffmann, Franz (1814-1882)"
+
+; Problem C13
+(defn who-wrote [bookshelf index]
+  (:author (nth bookshelf index)))
+
+(who-wrote [{:author "Me" :title "Best Book"} {:author "Sam" :title "This Other Book"}] 1)
+  => "Sam"
+
+; Problem C15
