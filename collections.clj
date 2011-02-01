@@ -121,4 +121,18 @@
 (who-wrote [{:author "Me" :title "Best Book"} {:author "Sam" :title "This Other Book"}] 1)
   => "Sam"
 
-; Problem C15
+; Problem C14
+(defn author-birth-years [books-coll]
+  (map #(:birth-year (:author %)) (filter #(:birth-year (:author %)) books-coll)))
+
+(def books [{:author {:name "Haruki Murakami"
+                      :birth-year 1949}
+             :title "Norwegian Wood"}
+            {:author {:name "David Mitchell"}
+             :title "The Thousand Autumns of Jacob de Zoet"}
+            {:author {:name "Guy Gavriel Kay"
+                      :birth-year 1954}
+             :title "Under Heaven"}])
+
+(author-birth-years books) => (1949 1954)
+
