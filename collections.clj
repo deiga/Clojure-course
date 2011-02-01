@@ -106,3 +106,10 @@
 (author-to-string {:name "Doyle, Arthur Conan, Sir", :birth-year 1859, :death-year 1930})
     => "Doyle, Arthur Conan, Sir (1859-1930)"
 
+; Problem C12
+(defn book-to-string [{title :title, author :author}]
+  (str "A book, " title ", written by " (author-to-string author)))
+
+(book-to-string {:title "Nuoren Robertin matka Grönlantiin isäänsä hakemaan"
+                 :author {:name "Hoffmann, Franz", :birth-year 1814, :death-year 1882}})
+    => "A book, Nuoren Robertin matka Grönlantiin isäänsä hakemaan, written by Hoffmann, Franz (1814-1882)"
