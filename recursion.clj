@@ -46,3 +46,15 @@
 (sequence-contains? 3 [1 2 3]) => true
 (sequence-contains? 3 [4 7 9]) => false
 (sequence-contains? :pony [])  => false
+
+; Problem R5
+(defn seq= [compare to]
+  (if (or (empty? compare) (empty? to))
+    false
+    (if (= (first compare) (first to))
+      (seq= (rest compare) (rest to))
+      false)))
+
+(seq= [1 2 4] '(1 2 4))  => true
+(seq= [1 2 3] [1 2 3 4]) => false
+(seq= [1 3 5] [])        => false
