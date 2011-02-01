@@ -93,3 +93,16 @@
     => (:name :birth-year :death-year)
 (my-keys {:title "Norwegian Wood" :author "Haruki Murakami"})
     => (:title :author)
+
+; Problem C11
+(defn author-to-string [author-map]
+  (let [{name :name
+         birth :birth-year
+         death :death-year} author-map]
+    (str name " (" birth "-" death ")")))
+
+(author-to-string {:name "Shakespeare, William", :birth-year 1564, :death-year 1616})
+    => "Shakespeare, William (1564-1616)"
+(author-to-string {:name "Doyle, Arthur Conan, Sir", :birth-year 1859, :death-year 1930})
+    => "Doyle, Arthur Conan, Sir (1859-1930)"
+
