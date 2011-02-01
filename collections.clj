@@ -34,10 +34,9 @@
 (defn describe-books [book-map]
   (let [number (count book-map)
         fst-str (str "I have " number " books.")]
-    (for (book book-map)
-      )))
+      (str fst-str (apply str (map (fn [x] (str " " (:title x) " was written by " (:author x) ".")) book-map)))))
 
-(describe-books [{:title "Fooled by Randomness" :author "Nassim Taleb"} {:title "In Cold Blood" :author "Truman Capote"}]
+(describe-books [{:title "Fooled by Randomness" :author "Nassim Taleb"} {:title "In Cold Blood" :author "Truman Capote"}])
 =>
 "I have 2 books. Fooled by Randomness was written by Nassim Taleb. In Cold Blood was written by Truman Capote."
 
@@ -54,3 +53,17 @@
 (monotonic? [3 2 0 -3]) => true
 (monotonic? [3 2 2])    => true  ; Not strictly monotonic
 (monotonic? [1 2 1 0])  => false
+
+; Problem C7
+(defn transpose [vecs]
+  )
+
+(transpose [[1 2 3]
+            [4 5 6]
+            [7 8 9]
+            [0 0 0]])
+    => ((1 4 7 0)
+        (2 5 8 0)
+        (3 6 9 0))
+(transpose []) => ()
+(transpose [[1 2 3]]) => ((1) (2) (3))
