@@ -56,7 +56,7 @@
 
 ; Problem C7
 (defn transpose [vecs]
-  (map first vecs))
+  (apply map list vecs)))
 
 (transpose [[1 2 3]
             [4 5 6]
@@ -137,7 +137,8 @@
 (author-birth-years books) => (1949 1954)
 
 ; Problem C15
-(defn add-at [matrix a b])
+(defn add-at [matrix a b]
+  (update-in matrix a #(+ % (get-in matrix b))))
 
 (add-at [[1 2 3]
          [4 5 6]
