@@ -42,7 +42,12 @@
 "I have 2 books. Fooled by Randomness was written by Nassim Taleb. In Cold Blood was written by Truman Capote."
 
 ; Problem C6
-(defn monotonic? [sequence])
+(defn monotonic? [sequence]
+  (let [asc (map <= sequence (next sequence))
+        desc (map >= sequence (next sequence))
+        asc-false (filter #(= false %) asc)
+        desc-false (filter #(= false %) desc)]
+    (or (= 0 (count asc-false)) (= 0 (count desc-false)))))
 
 (monotonic? [1 2 3])    => true
 (monotonic? [0 1 10 11]) => true
