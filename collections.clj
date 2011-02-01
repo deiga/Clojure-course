@@ -136,3 +136,31 @@
 
 (author-birth-years books) => (1949 1954)
 
+; Problem C15
+(defn add-at [matrix a b])
+
+(add-at [[1 2 3]
+         [4 5 6]
+         [7 8 9]]
+        [1 1]
+        [2 1])
+    => [[1 2  3]
+        [4 13 6]
+        [7 8  9]]
+
+; Problem C16
+(defn monotonic-prefix [sequence]
+  (let [asc (map <= sequence (next sequence))
+      desc (map >= sequence (next sequence))
+      asc-true (take-while #(= true %) asc)
+      desc-true (take-while #(= true %) desc)
+      asc-count (count asc-true)
+      desc-count (count desc-true)]
+      (if (> asc-count desc-count)
+        (take (inc asc-count) sequence)
+        (take (inc desc-count) sequence))))
+
+(monotonic-prefix [1 2 3 1]) => (1 2 3)
+(monotonic-prefix [1 3 10 9 2]) => (1 3 10)
+(monotonic-prefix [3 2 3 1]) => (3 2)
+(monotonic-prefix [7 6 1 0 10]) => (7 6 1 0)
