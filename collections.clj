@@ -79,8 +79,17 @@
 ; Problem C9
 (defn take-3 [coll]
   (let [[fst snd thrd] coll]
-    (conj [] fst snd thrd)))
+    [fst snd thrd]))
 
 (take-3 [1 2 3 4 5]) => [1 2 3]
 (take-3 ["Haruki" "Murakami"]) => ["Haruki" "Murakami" nil]
 
+; Problem C10
+(defn my-keys [a-map]
+  (for [[fst & rest] (seq a-map)]
+    fst))
+
+(my-keys {:name "Doyle, Arthur Conan, Sir" :birth-year 1859, :death-year 1930})
+    => (:name :birth-year :death-year)
+(my-keys {:title "Norwegian Wood" :author "Haruki Murakami"})
+    => (:title :author)
