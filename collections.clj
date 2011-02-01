@@ -56,7 +56,7 @@
 
 ; Problem C7
 (defn transpose [vecs]
-  )
+  (map first vecs))
 
 (transpose [[1 2 3]
             [4 5 6]
@@ -67,3 +67,11 @@
         (3 6 9 0))
 (transpose []) => ()
 (transpose [[1 2 3]]) => ((1) (2) (3))
+
+; Problem C8
+(defn exterminate [number-map]
+  (apply dissoc number-map (filter #(> % (get number-map %)) (keys number-map))))
+
+(exterminate {}) => {}
+(exterminate {3 2, 5 1}) => {}
+(exterminate {1 3, 4 2, 5 7, 10 9, 8 8}) => {1 3, 5 7, 8 8}
