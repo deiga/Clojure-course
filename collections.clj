@@ -75,3 +75,12 @@
 (exterminate {}) => {}
 (exterminate {3 2, 5 1}) => {}
 (exterminate {1 3, 4 2, 5 7, 10 9, 8 8}) => {1 3, 5 7, 8 8}
+
+; Problem C9
+(defn take-3 [coll]
+  (let [[fst snd thrd] coll]
+    (conj [] fst snd thrd)))
+
+(take-3 [1 2 3 4 5]) => [1 2 3]
+(take-3 ["Haruki" "Murakami"]) => ["Haruki" "Murakami" nil]
+
