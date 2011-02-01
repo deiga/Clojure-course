@@ -4,7 +4,7 @@
   (let [keys-to-add (map #(str "double-" %) (keys str-to-num))
         vals-to-add (map #(* 2 %) (vals str-to-num))
         mapped-addition (zipmap keys-to-add vals-to-add)]
-    (merge-with + str-to-num mapped-addition)))
+    (merge str-to-num mapped-addition)))
 
 (doublificate {"a" 1 "b" 7}) => {"a" 1 "double-a" 2 "b" 7 "double-b" 14}
 
