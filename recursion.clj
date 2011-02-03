@@ -90,3 +90,14 @@
 (fib 5) => 5
 (fib 6) => 8
 (fib 10) => 55
+
+; Problem R8
+(defn my-range [up-to]
+  (if (= 0 up-to)
+    nil
+    (cons (dec up-to) (my-range (dec up-to)))))
+
+(my-range 0)  => nil
+(my-range 1)  => (0)
+(my-range 2)  => (1 0)
+(my-range 3)  => (2 1 0)
