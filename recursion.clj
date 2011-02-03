@@ -169,3 +169,16 @@
 (rotations [:a :b]) => ((:a :b) (:b :a))
 
 ; Problem R14
+(defn frequencies-helper [freqs coll]
+  (if (empty? coll)
+    freqs
+    (if (find freqs (first coll))
+      (frequencies-helper (update-in freqs [(first coll)] inc) (rest coll))
+      (frequencies-helper (assoc freqs (first coll) 1) (rest coll)))))
+
+
+(defn my-frequencies [coll]
+  (frequencies-helper {} coll))
+
+(my-frequencies []) => {}
+(my-frequencies [:a "moi" :a "moi" "moi" :a 1]) => {:a 3, "moi" 3, 1 1}
