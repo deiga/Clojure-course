@@ -197,13 +197,22 @@
 (my-frequencies (un-frequencies {:a 100 :b 10})) => {:a 100 :b 10}
 
 ; Problem R16
+(defn merge* [left right]
+  (cond
+    (nil? left) right
+    (nil? right) left
+    true (let [[l & *left] left
+               [r & *right] right]
+            (if (<= l r)
+              (cons l (merge* *left right))
+              (cons r (merge* left *right))))))
 
 (defn merge-sort [sq]
-  (if (<= 1 (count sq))
-    sq
-    (let [middle (/ (count sq) 2)
-          [left right ] (split-at middle sq)]
-      (concat (merge-sort left) (merge-sort right)))))
+  (let [[head & tail] sq]
+    (if (nil? tail)
+      sq
+      (let [[left right] (split-at (/ (count sq) 2) sq)]
+        (merge* (merge-sort left) (merge-sort right))))))
 
 (defn seq-merge [sq1 sq2]
   (merge-sort (concat sq1 sq2)))
