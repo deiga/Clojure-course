@@ -113,3 +113,44 @@
 (map-1 count ["aaa" "bb" "cccc"])   => (3 2 4)
 (map-1 first [[1 2] [4] [7 12 28]]) => (1 4 7)
 (map-1 zero? [0 2 0 13 4 0])        => (true false true false false true)
+(map-1 #(cons (first%) (rest %)) [1 2 3 4])
+
+; Problem R10
+
+
+; Problem R11
+(defn tails [sequence]
+  (if (empty? sequence)
+    [()]
+    (cons (seq sequence) (tails (rest sequence)))))
+
+(defn inits [sequence]
+  (if (empty? sequence)
+    [()]
+    (cons (seq sequence) (inits (drop-last sequence)))))
+
+
+(tails [1 2 3 4])   => ((1 2 3 4) (2 3 4) (3 4) (4) ())
+(inits [1 2 3 4])   => (() (1) (1 2) (1 2 3) (1 2 3 4))
+(inits [1 2 3 4])   => ((1 2) () (1 2 3) (1) (1 2 3 4))
+
+; Problem R12
+(defn monotonic-prefix [sequence]
+  (let [asc (map <= sequence (next sequence))
+      desc (map >= sequence (next sequence))
+      asc-true (take-while #(= true %) asc)
+      desc-true (take-while #(= true %) desc)
+      asc-count (count asc-true)
+      desc-count (count desc-true)]
+      (if (> asc-count desc-count)
+        (take (inc asc-count) sequence)
+        (take (inc desc-count) sequence))))
+
+(defn split-into-monotonic [sequence]
+  (when-not (empty? sequence)
+    (let [mons (monotonic-prefix sequence)]
+      (cons mons (split-into-monotonic (drop (count mons) sequence))))))
+
+(split-into-monotonic [0 1 2])
+(split-into-monotonic [0 1 2 1 0])   => ((0 1 2) (1 0))
+(split-into-monotonic [0 5 4 7 1 3]) => ((0 5) (4 7) (1 3))
