@@ -86,7 +86,7 @@
 
 ; Problem C10
 (defn my-keys [a-map]
-  (for [[fst & rest] (seq a-map)]
+  (for [[fst] a-map]
     fst))
 
 (my-keys {:name "Doyle, Arthur Conan, Sir" :birth-year 1859, :death-year 1930})

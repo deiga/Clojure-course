@@ -197,3 +197,16 @@
 (my-frequencies (un-frequencies {:a 100 :b 10})) => {:a 100 :b 10}
 
 ; Problem R16
+
+(defn merge-sort [sq]
+  (if (<= 1 (count sq))
+    sq
+    (let [middle (/ (count sq) 2)
+          [left right ] (split-at middle sq)]
+      (concat (merge-sort left) (merge-sort right)))))
+
+(defn seq-merge [sq1 sq2]
+  (merge-sort (concat sq1 sq2)))
+
+(seq-merge [4] [1 2 6 7])        => (1 2 4 6 7)
+(seq-merge [1 5 7 9] [2 2 8 10]) => (1 2 2 5 7 8 9 10)
