@@ -49,12 +49,16 @@
 
 ; Problem R5
 (defn seq= [compare to]
-  (if (or (empty? compare) (empty? to))
-    false
-    (if (= (first compare) (first to))
-      (seq= (rest compare) (rest to))
-      false)))
+  (if (and (empty? compare) (empty? to))
+    true
+    (if (or (empty? compare) (empty? to))
+      false
+      (if (= (first compare) (first to))
+        (seq= (rest compare) (rest to))
+        false))))
 
+(seq= [1] '(1))
+(seq= [] '())
 (seq= [1 2 4] '(1 2 4))  => true
 (seq= [1 2 3] [1 2 3 4]) => false
 (seq= [1 3 5] [])        => false
