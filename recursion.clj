@@ -154,3 +154,18 @@
 (split-into-monotonic [0 1 2])
 (split-into-monotonic [0 1 2 1 0])   => ((0 1 2) (1 0))
 (split-into-monotonic [0 5 4 7 1 3]) => ((0 5) (4 7) (1 3))
+
+; Problem R13
+(defn rotate-helper [sq rots]
+  (if (= 0 rots)
+    ()
+    (cons (seq sq) (rotate-helper (cons (last sq) (drop-last sq)) (dec rots)))))
+
+(defn rotations [sq]
+  (rotate-helper sq (count sq)))
+
+(rotations [])      => ()
+(rotations [1 2 3]) => ((1 2 3) (2 3 1) (3 1 2))
+(rotations [:a :b]) => ((:a :b) (:b :a))
+
+; Problem R14
