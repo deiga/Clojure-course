@@ -27,7 +27,7 @@
         first-operand (string->number fst)
         second-operand (string->number snd)]
     (cond
-      (and (< 2 (count args)) (= "pow" command));;(or (> 2 (count args)) (< 2 (count args)))
+      (and (< 2 (count args)) (= "pow" command))
         (conj () store (str "Wrong number of arguments to " command ": expects 2, you gave " (count args) "."))
       (= "store" command)
         (if (nil? second-operand)
