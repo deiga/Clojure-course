@@ -20,6 +20,8 @@
       (case command
         "+" (+ first-operand second-operand)
         "*" (* first-operand second-operand)
+        "-" (- first-operand second-operand)
+        ""  "HELLO!"
         nil))))
 
 (defn main []
@@ -28,5 +30,8 @@
         command (first words)
         arguments (rest words)
         result (compute command arguments)]
-    (println "  =>" result))
-  (main))
+    (if (or (= "" command) (nil? command))
+      "Exiting Calculatrix"
+      (do 
+        (println "  =>" result)
+        (main)))))
