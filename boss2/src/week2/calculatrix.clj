@@ -19,36 +19,50 @@
     (catch NumberFormatException e nil)
     ))
 
-(defn compute [command args & [last-result]]
+(defn compute [command args store & [last-result]]
   "Takes a command and a sequence of arguments, returns computed value
   or nil if given an unknown command or non-integer operands."
-  (let [first-operand (string->number (first args))
-        second-operand (string->number (second args))]
+  (let [fst (first args)
+        snd (second args)
+        first-operand (string->number fst)
+        second-operand (string->number snd)]
     (cond
       (and (< 2 (count args)) (= "pow" command));;(or (> 2 (count args)) (< 2 (count args)))
-        (str "Wrong number of arguments to " command ": expects 2, you gave " (count args) ".")
-      (and (nil? first-operand) (not (= "_" (first args))))
-        (str "Invalid operand: " (first args))
-      (and (nil? second-operand) (not (= "_" (second args))))
-        (str "Invalid operand: " (second args))
-      (= "_" (first args))
-        (compute command (conj [] last-result second-operand))
-      (= "_" (second args))
-        (compute command (conj [] first-operand last-result))
+        (conj () store (str "Wrong number of arguments to " command ": expects 2, you gave " (count args) "."))
+      (= "store" command)
+        (if (nil? second-operand)
+          (conj () (conj store [fst (store snd)]) nil)
+          (conj () (conj store [fst second-operand]) nil))
+      (and (nil? first-operand) (not (= "_" fst)) (not (contains? store fst)))
+        (conj () store (str "Invalid operand: " fst))
+      (and (nil? second-operand) (not (= "_" snd)) (not (contains? store snd)))
+        (conj () store (str "Invalid operand: " snd))
+      (= "_" fst)
+        (compute command (conj [] last-result snd) store)
+      (= "_" snd)
+        (compute command (conj [] fst last-result) store)
+      (contains? store fst)
+        (compute command (conj [] (store fst) snd) store)
+      (contains? store snd)
+        (compute command (conj [] fst (store snd)) store)
       (and first-operand second-operand)
         (if (contains? function-table command)
-          (apply (function-table command) (map string->number args))
-          (str "Invalid command: " command)))))
+          (conj () store (apply (function-table command) (map string->number args)))
+          (conj () store (str "Invalid command: " command))))))
 
-(defn main [& [last-result]]
-  "This is the driver loop of the calculator. It loops by calling itself recursively."
+(defn main-helper [[last-result store]]
   (let [words (read-words)
         command (first words)
         arguments (rest words)
-        result (compute command arguments last-result)]
+        result (compute command arguments store last-result)]
     (if (or (= "" command) (nil? command))
       "Exiting Calculatrix"
       (do
-        (println "  =>" result)
-        (main result)))))
+        (println "  =>" (first result))
+        (main-helper result)))))
+
+(defn main []
+  "This is the driver loop of the calculator. It loops by calling itself recursively."
+  (main-helper [0 {}]))
+
 
