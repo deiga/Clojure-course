@@ -16,13 +16,19 @@
   or nil if given an unknown command or non-integer operands."
   (let [first-operand (string->number (first args))
         second-operand (string->number (second args))]
-    (when (and first-operand second-operand)
-      (case command
-        "+" (+ first-operand second-operand)
-        "*" (* first-operand second-operand)
-        "-" (- first-operand second-operand)
-        ""  "HELLO!"
-        nil))))
+    (cond
+      (< 2 (count args))
+        (str "Too many arguments for command: " command)
+      (nil? first-operand)
+        (str "Invalid operand: " (first args))
+      (nil? second-operand)
+        (str "Invalid operand: " (second args))
+      (and first-operand second-operand)
+        (case command
+          "+" (+ first-operand second-operand)
+          "*" (* first-operand second-operand)
+          "-" (- first-operand second-operand)
+          (str "Invalid command: " command)))))
 
 (defn main []
   "This is the driver loop of the calculator. It loops by calling itself recursively."
@@ -32,6 +38,6 @@
         result (compute command arguments)]
     (if (or (= "" command) (nil? command))
       "Exiting Calculatrix"
-      (do 
+      (do
         (println "  =>" result)
         (main)))))
