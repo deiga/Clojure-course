@@ -1,5 +1,11 @@
 (ns week2.calculatrix)
 
+(def function-table {"+" (fn [x y] (+ x y))
+                     "*" (fn [x y] (* x y))
+                     "-" (fn [x y] (- x y))
+                     "avg" (fn [x y] (/ (+ x y) 2))
+                     "pow" (fn [b e] (int (Math/pow b e)))})
+
 (defn read-words []
   "Read a line and split it into words. Returns the words as a vector
   of strings. Loops until a line is available."
@@ -30,10 +36,8 @@
       (= "_" (second args))
         (compute command (conj [] first-operand last-result))
       (and first-operand second-operand)
-        (case command
-          "+" (+ first-operand second-operand)
-          "*" (* first-operand second-operand)
-          "-" (- first-operand second-operand)
+        (if (contains? function-table command)
+          ((get function-table command) first-operand second-operand)
           (str "Invalid command: " command)))))
 
 (defn main [& [last-result]]
