@@ -9,9 +9,9 @@
 
 (defn string->number [string]
   (try
-    (Integer/parseInt string)
+    (Integer/parseInt (str string))
     (catch NumberFormatException e nil)
-    (catch ClassCastException e string)))
+    ))
 
 (defn compute [command args & [last-result]]
   "Takes a command and a sequence of arguments, returns computed value
