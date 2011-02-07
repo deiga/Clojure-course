@@ -197,25 +197,34 @@
 (my-frequencies (un-frequencies {:a 100 :b 10})) => {:a 100 :b 10}
 
 ; Problem R16
-(defn merge* [left right]
+(defn seq-merge-helper [outp sq1 sq2]
   (cond
-    (nil? left) right
-    (nil? right) left
-    true (let [[l & *left] left
-               [r & *right] right]
-            (if (<= l r)
-              (cons l (merge* *left right))
-              (cons r (merge* left *right))))))
+    (zero? (count sq1))
+      (concat outp sq2)
+    (zero? (count sq2))
+      (concat outp sq1)
+    (> (first sq1) (first sq2))
+      (seq-merge-helper (conj outp (first sq2)) sq1 (rest sq2))
+    (< (first sq1) (first sq2))
+      (seq-merge-helper (conj outp (first sq1)) (rest sq1) sq2)
+    (= (first sq1) (first sq2))
+      (seq-merge-helper (conj outp (first sq1) (first sq2)) (rest sq1) (rest sq2))))
 
-(defn merge-sort [sq]
+
+(defn seq-merge [sq1 sq2]
+  (seq-merge-helper [] sq1 sq2))
+
+(seq-merge [4] [1 2 6 7])        => (1 2 4 6 7)
+(seq-merge [1 5 7 9] [2 2 8 10]) => (1 2 2 5 7 8 9 10)
+
+; Problem R17
+(defn mergesort [sq]
   (let [[head & tail] sq]
     (if (nil? tail)
       sq
       (let [[left right] (split-at (/ (count sq) 2) sq)]
-        (merge* (merge-sort left) (merge-sort right))))))
+        (seq-merge (merge-sort left) (merge-sort right))))))
 
-(defn seq-merge [sq1 sq2]
-  (merge-sort (concat sq1 sq2)))
-
-(seq-merge [4] [1 2 6 7])        => (1 2 4 6 7)
-(seq-merge [1 5 7 9] [2 2 8 10]) => (1 2 2 5 7 8 9 10)
+(mergesort [])                 => ()
+(mergesort [1 2 3])            => (1 2 3)
+(mergesort [5 3 4 17 2 100 1]) => (1 2 3 4 5 17 100)
