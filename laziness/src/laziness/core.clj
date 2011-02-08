@@ -38,8 +38,11 @@
   (let [with-indices (indexed a-seq)]
     (map first with-indices)))
 
+;; Problem L6
 (defn inits [a-seq]
-  ":(")
+  (for [num a-seq]
+    (map #(take % a-seq) (range))))
+  ;;(map (fn [x y] (take x y)) (range) (repeat (inc (count a-seq)) a-seq)))
 
 (defn sum-halve [a-seq]
   ":(")
