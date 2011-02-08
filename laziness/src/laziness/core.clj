@@ -5,11 +5,17 @@
   (with-open [in (reader (as-url url))]
     (doall (line-seq in))))
 
+;; Problem L1
 (defn counting-spider [urls]
-  ":(")
+  (doall (for [url urls]
+      (do
+        (println (str "Fetching " url))
+        (count (url-get url))))))
 
+;; Problem L2
 (defn print-squares [up-to]
-  ":(")
+  (doseq [num (range up-to)]
+    (println (* num num))))
 
 (defn super-composite [n]
   ":(")
