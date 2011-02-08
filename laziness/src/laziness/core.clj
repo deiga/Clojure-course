@@ -25,14 +25,8 @@
 (defn divisible-by-all-under? [number up-to]
   (every? true? (map #(zero? (mod number %)) (range 1 (inc up-to)))))
 
-(defn composite-helper [num up-to]
-  (cond
-    (divisible-by-all-under? num up-to)
-      num
-    :else
-      (composite-helper (inc num) up-to)))
-
-(defn super-composite [n])
+(defn super-composite [n]
+  (first (filter #(divisible-by-all-under? % n) (rest (range)))))
 
 (defn indexed
   "Maps elements of a sequence from element to [index-in-sequence element]."
