@@ -23,7 +23,7 @@
 
 ;; Problem L4
 (defn divisible-by-all-under? [number up-to]
-  (every? true? (map #(zero? (mod number %)) (range 1 (inc up-to)))))
+  (= up-to (count (filter #(zero? (mod number %)) (range 1 (inc up-to))))));;(not (some false? (map #(zero? (mod number %)) (range 1 (inc up-to))))))
 
 (defn super-composite [n]
   (first (filter #(divisible-by-all-under? % n) (rest (range)))))
@@ -44,7 +44,7 @@
 
 ;; Problem L7
 (defn halves [a-seq]
-  (map (fn [x y](vector (take x a-seq) (drop x a-seq))) (rest (range)) a-seq))
+  (map (fn [x y] (vector (take x a-seq) (drop x a-seq))) (rest (range)) a-seq))
 
 (defn sum-halve [a-seq]
   (first (filter #(= (apply + (first %)) (apply + (second %))) (halves a-seq))))
@@ -53,8 +53,9 @@
 (defn nonempty-tails [a-seq]
   (map (fn [x y] x) (iterate rest a-seq) a-seq))
 
+;; Problem L9
 (defn subseqs [a-seq]
-  ":(")
+  (map (fn [x y] (conj () (drop-last x a-seq) (drop x a-seq))) (rest (range)) a-seq))
 
 (defn subseq-sum [target a-seq]
   ":(")
