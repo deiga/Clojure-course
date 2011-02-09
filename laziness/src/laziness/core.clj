@@ -58,6 +58,6 @@
   (mapcat nonempty-tails (inits a-seq)))
 
 (defn subseq-sum [target a-seq]
-  ":(")
+  (first (filter #(= target (apply + %)) (subseqs a-seq))))
 
 ;(
