@@ -40,12 +40,14 @@
 
 ;; Problem L6
 (defn inits [a-seq]
-  (for [num a-seq]
-    (map #(take % a-seq) (range))))
-  ;;(map (fn [x y] (take x y)) (range) (repeat (inc (count a-seq)) a-seq)))
+  (map (fn [x y] (take x a-seq)) (range) a-seq));;(repeat (inc (count a-seq)) a-seq)))
+
+;; Problem L7
+(defn halves [a-seq]
+  (map (fn [x y](vector (take x a-seq) (drop x a-seq))) (rest (range)) a-seq))
 
 (defn sum-halve [a-seq]
-  ":(")
+  (first (filter #(= (apply + (first %)) (apply + (second %))) (halves a-seq))))
 
 (defn nonempty-tails [a-seq]
   ":(")
