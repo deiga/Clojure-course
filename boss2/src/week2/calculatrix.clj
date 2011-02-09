@@ -4,7 +4,8 @@
                      "*" (fn [& args] (apply * args))
                      "-" (fn [& args] (apply - args))
                      "avg" (fn [& args] (/ (apply + args) 2))
-                     "pow" (fn [b e] (int (Math/pow b e)))})
+                     "pow" (fn [b e] (int (Math/pow b e)))
+                     })
 
 (defn read-words []
   "Read a line and split it into words. Returns the words as a vector
