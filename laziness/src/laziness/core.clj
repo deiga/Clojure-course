@@ -1,5 +1,6 @@
 (ns laziness.core
-  (:use [clojure.java.io :only (reader as-url)]))
+  (:use [clojure.java.io :only (reader as-url)])
+  (:use [clojure.contrib.math :only (gcd)]))
 
 (defn url-get [url]
   (with-open [in (reader (as-url url))]
@@ -25,8 +26,11 @@
 (defn divisible-by-all-under? [number up-to]
   (= up-to (count (filter #(zero? (mod number %)) (range 1 (inc up-to))))));;(not (some false? (map #(zero? (mod number %)) (range 1 (inc up-to))))))
 
-(defn super-composite [n]
+(defn super-composite2 [n]
   (first (filter #(divisible-by-all-under? % n) (rest (range)))))
+
+(defn super-composite [n]
+  (reduce (fn [x y] (/ (* x y) (gcd x y))) (range 2 (inc n))))
 
 (defn indexed
   "Maps elements of a sequence from element to [index-in-sequence element]."
@@ -35,8 +39,7 @@
 
 ;; Problem L5
 (defn indexes [a-seq]
-  (let [with-indices (indexed a-seq)]
-    (map first with-indices)))
+  (map first (indexed a-seq)))
 
 ;; Problem L6
 (defn inits [a-seq]
