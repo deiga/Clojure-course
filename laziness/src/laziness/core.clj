@@ -40,7 +40,7 @@
 
 ;; Problem L6
 (defn inits [a-seq]
-  (map (fn [x y] (take x a-seq)) (range) a-seq));;(repeat (inc (count a-seq)) a-seq)))
+  (conj (map (fn [x y] (take x a-seq)) (rest (range)) a-seq) ()));;(repeat (inc (count a-seq)) a-seq)))
 
 ;; Problem L7
 (defn halves [a-seq]
@@ -49,8 +49,9 @@
 (defn sum-halve [a-seq]
   (first (filter #(= (apply + (first %)) (apply + (second %))) (halves a-seq))))
 
+;; Problem L8
 (defn nonempty-tails [a-seq]
-  ":(")
+  (map (fn [x y] x) (iterate rest a-seq) a-seq))
 
 (defn subseqs [a-seq]
   ":(")
