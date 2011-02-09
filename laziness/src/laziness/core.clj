@@ -55,7 +55,7 @@
 
 ;; Problem L9
 (defn subseqs [a-seq]
-  (map (fn [x y] (conj () (drop-last x a-seq) (drop x a-seq))) (rest (range)) a-seq))
+  (mapcat nonempty-tails (inits a-seq)))
 
 (defn subseq-sum [target a-seq]
   ":(")
