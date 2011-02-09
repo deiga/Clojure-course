@@ -1,7 +1,12 @@
 (ns looping.core)
 
+;; Problem LR1
 (defn power [base exp]
-  ":(")
+  (let [helper (fn [foo bar]
+          (if (zero? bar)
+            foo
+            (recur (* foo foo) (dec bar))))]
+    (helper base exp)))
 
 (defn last-element [a-seq]
   ":(")
@@ -21,7 +26,7 @@
 (defn fast-fibo [n]
   ":(")
 
-(defn cat-at-repetition [a-seq]
+(defn cut-at-repetition [a-seq]
   ":(")
 
 ;(
