@@ -51,12 +51,23 @@
                   (recur (rest s) (+ sum (first s)))))]
     (helper a-seq 0)))
 
+;; Problem LR6
 (defn parity [a-seq]
-  ":(")
+  (let [helper (fn [st sq]
+                  (cond
+                    (empty? sq)
+                      st
+                    (contains? st (first sq))
+                      (recur (disj st (first sq)) (rest sq))
+                    :else
+                      (recur (conj st (first sq)) (rest sq))))]
+    (helper #{} a-seq)))
 
+;; Problem LR7
 (defn fast-fibo [n]
   ":(")
 
+;; Problem LR8
 (defn cut-at-repetition [a-seq]
   ":(")
 
