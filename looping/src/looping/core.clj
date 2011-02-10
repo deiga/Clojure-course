@@ -6,10 +6,14 @@
           (if (zero? bar)
             foo
             (recur (* foo foo) (dec bar))))]
-    (helper base exp)))
+    (helper base (dec exp))))
 
+;; Problem LR2
 (defn last-element [a-seq]
-  ":(")
+  (when-not (empty? a-seq)
+    (if (= 1 (count a-seq))
+      (first a-seq)
+      G(recur (drop 1 a-seq)))))
 
 (defn seq= [seq1 seq2]
   ":(")
