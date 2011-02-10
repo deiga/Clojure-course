@@ -80,6 +80,12 @@
 
 ;; Problem LR8
 (defn cut-at-repetition [a-seq]
-  ":(")
-
-;(
+  (loop [outp []
+         sq a-seq]
+    (cond
+      (empty? sq)
+        outp
+      (some #(= (first sq) %) outp)
+        outp
+      :else
+        (recur (conj outp (first sq)) (rest sq)))))
