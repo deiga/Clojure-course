@@ -65,7 +65,18 @@
 
 ;; Problem LR7
 (defn fast-fibo [n]
-  ":(")
+  (loop [k 2
+         fu-n 1
+         fu-n1 0]
+    (cond
+      (zero? n)
+        0
+      (= 1 n)
+        1
+      (= k n)
+        (+ fu-n fu-n1)
+      :else
+        (recur (inc k) (+ fu-n fu-n1) fu-n))))
 
 ;; Problem LR8
 (defn cut-at-repetition [a-seq]
