@@ -19,7 +19,7 @@
       (first a-seq)
       (recur (rest a-seq)))))
 
-;; Problem LR2
+;; Problem LR3
 (defn seq= [seq1 seq2]
     (cond
       (and (empty? seq1) (empty? seq2))

@@ -115,8 +115,17 @@
 (map-1 zero? [0 2 0 13 4 0])        => (true false true false false true)
 (map-1 #(cons (first%) (rest %)) [1 2 3 4])
 
-; Problem R10
+(defn snip-many [sq]
+  (conj [] (take-while number? sq) (drop-while #(= :snip %) (drop-while number? sq))))
 
+(snip-many [1 2 3])
+  => ((1 2 3))
+(snip-many [])
+  => (())
+(snip-many [:snip 1 2 :snip 3 :snip])
+  => (() (1 2) (3) ())
+(snip-many [:snip])
+  => (() ())
 
 ; Problem R11
 (defn tails [sequence]
