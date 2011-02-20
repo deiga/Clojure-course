@@ -4,8 +4,9 @@
 (defn concat-all [a-seq]
   (reduce concat [] a-seq))
 
+;; Problem F2
 (defn string-cat [a-seq]
-  ":(")
+  (reduce (fn [x y] (str x (str " " y))) a-seq))2
 
 (defn seq-length [a-seq]
   ":(")
