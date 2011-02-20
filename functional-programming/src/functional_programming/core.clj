@@ -8,11 +8,13 @@
 (defn string-cat [a-seq]
   (reduce (fn [x y] (str x (str " " y))) a-seq))2
 
+;; Problem F3
 (defn seq-length [a-seq]
   ":(")
 
+;; Problem F4
 (defn my-reverse [a-seq]
-  ":(")
+  (reduce conj '() a-seq))
 
 (defn insert [a-seq elem]
   ":(")
