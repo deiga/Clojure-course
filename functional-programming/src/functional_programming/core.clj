@@ -1,7 +1,8 @@
 (ns functional-programming.core)
 
+;; Problem F1
 (defn concat-all [a-seq]
-  ":(")
+  (reduce concat [] a-seq))
 
 (defn string-cat [a-seq]
   ":(")
