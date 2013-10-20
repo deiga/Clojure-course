@@ -16,12 +16,14 @@
 (defn my-reverse [a-seq]
   (reduce conj '() a-seq))
 
+;; Problem F5
 (defn insert [a-seq elem]
   ":(")
 
 (defn insertion-sort [a-seq]
   ":(")
 
+;; Problem  F6
 (defn seq-min-max [a-seq]
   ":(")
 
